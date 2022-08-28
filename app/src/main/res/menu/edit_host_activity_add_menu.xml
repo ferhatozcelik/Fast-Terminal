@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:connectbot="http://schemas.android.com/apk/res-auto">
+
+	<item android:id="@+id/save"
+		android:icon="@drawable/ic_add"
+		android:title="@string/hostpref_add_host"
+        connectbot:showAsAction="always|withText"
+		/>
+
+</menu>

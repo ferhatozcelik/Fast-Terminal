@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_marginBottom="4dp"
+				android:layout_marginEnd="20dp"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="4dp"
+				android:orientation="vertical"
+				android:background="@drawable/button_rounded_primary_light"
+				android:padding="4dp">
+
+				<RadioGroup
+					android:id="@+id/radiobutton_group"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<RadioButton
+						android:id="@+id/radiobutton_ssh"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:buttonTint="@color/white"
+						android:textColor="@color/white"
+						android:checked="true"
+						android:text="SSH" />
+
+					<RadioButton
+						android:id="@+id/radiobutton_telnet"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:buttonTint="@color/white"
+						android:textColor="@color/white"
+						android:text="TELNET" />
+
+					<RadioButton
+						android:id="@+id/radiobutton_local"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:buttonTint="@color/white"
+						android:textColor="@color/white"
+						android:text="LOCAL" />
+
+				</RadioGroup>
+
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="4dp">
+				<TextView
+					android:id="@+id/quickconnect_field"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/open_sans_bold"
+					android:gravity="center"
+					android:text="@string/hostpref_username_title"
+					android:textColor="@color/primary"
+					android:textSize="16sp"
+					android:textStyle="bold" />
+
+				<EditText
+					android:id="@+id/username_edit_text"
+					android:layout_width="match_parent"
+					android:layout_height="35dp"
+					android:layout_marginLeft="12dp"
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="8dp"
+					android:drawableStart="@drawable/ic_person"
+					android:drawableTint="@color/primary_dark"
+					android:drawablePadding="4dp"
+					android:background="@drawable/backgraund_outline"
+					android:fontFamily="@font/open_sans"
+					android:textSize="14sp"
+					android:hint="@string/hostpref_username_title"
+					android:padding="6dp"
+					android:textColor="@color/primary"
+					android:textStyle="bold" />
+
+
+				<EditText
+					android:id="@+id/hostname_edit_text"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="12dp"
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="8dp"
+					android:background="@drawable/backgraund_outline"
+					android:fontFamily="@font/open_sans"
+					android:drawableStart="@drawable/ic_vpn_lock"
+					android:drawableTint="@color/primary_dark"
+					android:drawablePadding="4dp"
+					android:hint="@string/hostpref_hostname_title"
+					android:padding="6dp"
+					android:textSize="14sp"
+					android:textColor="@color/primary"
+					android:textStyle="bold" />
+
+				<EditText
+					android:id="@+id/port_edit_text"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="12dp"
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="8dp"
+					android:textSize="14sp"
+					android:background="@drawable/backgraund_outline"
+					android:fontFamily="@font/open_sans"
+					android:drawableStart="@drawable/ic_laptop"
+					android:drawableTint="@color/primary_dark"
+					android:drawablePadding="4dp"
+					android:hint="@string/hostpref_port_title"
+					android:inputType="number"
+					android:padding="6dp"
+					android:textColor="@color/primary"
+					android:textStyle="bold" />
+
+				<EditText
+					android:id="@+id/nickname_field"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="12dp"
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="8dp"
+					android:textSize="14sp"
+					android:background="@drawable/backgraund_outline"
+					android:drawableStart="@drawable/ic_code"
+					android:drawableTint="@color/primary_dark"
+					android:drawablePadding="4dp"
+					android:fontFamily="@font/open_sans"
+					android:hint="@string/prompt_nickname"
+					android:inputType="text"
+					android:padding="6dp"
+					android:textColor="@color/primary"
+					android:textStyle="bold" />
+
+
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<ImageView
+					style="@style/ListItemIcon"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_margin="8dp"
+					app:srcCompat="@drawable/ic_format_size"
+					app:tint="@color/primary_dark" />
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/font_size_title"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="8dp"
+						android:fontFamily="@font/open_sans_bold"
+						android:text="@string/hostpref_fontsize_title"
+						android:textColor="@color/primary"
+						android:textSize="14sp"
+						android:textStyle="bold" />
+
+					<SeekBar
+						android:id="@+id/font_size_bar"
+						android:layout_width="match_parent"
+						android:layout_height="30dp"
+						android:layout_gravity="center"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:layout_weight="1"
+						android:max="32"
+						android:thumbTint="@color/primary_dark" />
+
+
+				</LinearLayout>
+
+				<EditText
+					android:id="@+id/font_size_text"
+					android:layout_width="50dp"
+					android:layout_height="30dp"
+					android:layout_gravity="center_vertical"
+					android:layout_marginEnd="16dp"
+					android:background="@drawable/backgraund_outline"
+					android:gravity="center"
+					android:inputType="number"
+					android:maxLines="1"
+					android:padding="4dp"
+					tools:text="10" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/pubkey_item"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_margin="8dp"
+					app:srcCompat="@drawable/ic_vpn_key"
+					app:tint="@color/primary_dark" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/pubkey_title"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:fontFamily="@font/open_sans_bold"
+						android:gravity="left"
+						android:text="@string/hostpref_pubkeyid_title"
+						android:textColor="@color/primary"
+						android:textSize="14sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/pubkey_text"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:fontFamily="@font/open_sans"
+						android:gravity="left"
+						android:text="@string/use_any_key"
+						android:textColor="@color/primary"
+						android:textSize="14sp"
+						android:textStyle="normal" />
+
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/delkey_item"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_margin="8dp"
+					app:srcCompat="@drawable/ic_keyboard"
+					app:tint="@color/primary_dark" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/delkey_title"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:fontFamily="@font/open_sans_bold"
+						android:gravity="left"
+						android:text="@string/hostpref_delkey_title"
+						android:textColor="@color/primary"
+						android:textSize="14sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/delkey_text"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:fontFamily="@font/open_sans"
+						android:gravity="left"
+						android:text="@string/delete"
+						android:textColor="@color/primary"
+						android:textSize="14sp"
+						android:textStyle="normal" />
+
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/encoding_item"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_margin="8dp"
+					app:srcCompat="@drawable/ic_code"
+					app:tint="@color/primary_dark" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/encoding_title"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:fontFamily="@font/open_sans_bold"
+						android:gravity="left"
+						android:text="@string/hostpref_encoding_title"
+						android:textColor="@color/primary"
+						android:textSize="14sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/encoding_text"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:fontFamily="@font/open_sans"
+						android:gravity="left"
+						android:text="UTF-8"
+						android:textColor="@color/primary"
+						android:textSize="14sp"
+						android:textStyle="normal" />
+
+				</LinearLayout>
+			</LinearLayout>
+
+			<com.ferhatozcelik.terminal.views.CheckableMenuItem
+				android:id="@+id/use_ssh_auth_item"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:icon="@drawable/ic_vpn_lock"
+				android:title="@string/hostpref_authagent_title" />
+
+			<com.ferhatozcelik.terminal.views.CheckableMenuItem
+				android:id="@+id/ssh_auth_confirmation_item"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:title="@string/hostpref_authagent_with_confirmation"
+				android:visibility="gone" />
+
+			<com.ferhatozcelik.terminal.views.CheckableMenuItem
+				android:id="@+id/compression_item"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:icon="@drawable/ic_zip"
+				android:title="@string/hostpref_compression_title"
+				app:summary="@string/hostpref_compression_summary" />
+
+			<com.ferhatozcelik.terminal.views.CheckableMenuItem
+				android:id="@+id/stay_connected_item"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:icon="@drawable/ic_sync"
+				android:title="@string/hostpref_stayconnected_title"
+				app:summary="@string/hostpref_stayconnected_summary" />
+
+			<com.ferhatozcelik.terminal.views.CheckableMenuItem
+				android:id="@+id/close_on_disconnect_item"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:icon="@drawable/ic_sync_disabled"
+				android:title="@string/hostpref_quickdisconnect_title"
+				app:summary="@string/hostpref_quickdisconnect_summary" />
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</RelativeLayout>

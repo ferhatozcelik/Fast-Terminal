@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:id="@+id/headerLayout"
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:background="@drawable/header_back"
+		android:gravity="center_vertical">
+
+		<ImageView
+			android:layout_width="110dp"
+			android:layout_height="110dp"
+			android:layout_alignParentStart="true"
+			android:layout_centerVertical="true"
+			android:layout_marginStart="8dp"
+			android:scaleType="centerCrop"
+			android:src="@drawable/icon_transparent"
+			app:tint="@color/white" />
+
+		<ImageButton
+			android:id="@+id/addHostButton"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:layout_centerVertical="true"
+			android:layout_marginEnd="4dp"
+			android:layout_toStartOf="@+id/commandsListButton"
+			android:background="@color/transparent"
+			android:padding="4dp"
+			android:scaleType="centerCrop"
+			android:src="@drawable/baseline_add_circle_outline_white_24dp"
+			app:tint="@color/white" />
+
+
+		<ImageButton
+			android:id="@+id/commandsListButton"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:layout_centerVertical="true"
+			android:layout_marginEnd="4dp"
+			android:layout_toStartOf="@+id/allPubKeysButton"
+			android:background="@color/transparent"
+			android:padding="4dp"
+			android:scaleType="centerCrop"
+			android:src="@drawable/ic_code"
+			app:tint="@color/white" />
+
+		<ImageButton
+			android:id="@+id/allPubKeysButton"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:layout_centerVertical="true"
+			android:layout_marginEnd="4dp"
+			android:layout_toStartOf="@+id/allDisconnectButton"
+			android:background="@color/transparent"
+			android:padding="4dp"
+			android:scaleType="centerCrop"
+			android:src="@drawable/ic_vpn_key"
+			app:tint="@color/white" />
+
+		<ImageButton
+			android:id="@+id/allDisconnectButton"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:layout_centerVertical="true"
+			android:layout_marginEnd="4dp"
+			android:layout_toStartOf="@+id/settingButton"
+			android:background="@color/transparent"
+			android:padding="4dp"
+			android:scaleType="centerCrop"
+			android:src="@drawable/baseline_clear_all_white_24dp"
+			app:tint="@color/white" />
+
+		<ImageButton
+			android:id="@+id/settingButton"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:layout_alignParentEnd="true"
+			android:layout_centerVertical="true"
+			android:layout_marginEnd="8dp"
+			android:background="@color/transparent"
+			android:padding="4dp"
+			android:scaleType="centerCrop"
+			android:src="@drawable/baseline_settings_white_24dp"
+			app:tint="@color/white" />
+
+
+	</RelativeLayout>
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/headerLayout" />
+
+	<ImageView
+		android:id="@+id/empty"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@+id/headerLayout"
+		android:padding="30dp"
+		android:src="@drawable/nodata"/>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+plugins {
+	id 'com.android.application'
+}
+
+android {
+	compileSdkVersion 32
+
+	defaultConfig {
+		applicationId "com.ferhatozcelik.terminal"
+		versionName "1.0.0"
+		versionCode 1
+		minSdkVersion 21
+		targetSdkVersion 32
+		vectorDrawables.useSupportLibrary = true
+
+	}
+
+	buildTypes {
+		release {
+			shrinkResources true
+			minifyEnabled true
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+		}
+	}
+
+
+}
+
+
+
+dependencies {
+	implementation 'org.connectbot:sshlib:2.2.20'
+	implementation "androidx.recyclerview:recyclerview:1.2.1"
+	implementation 'androidx.appcompat:appcompat:1.4.2'
+	implementation "androidx.preference:preference:1.2.0"
+	implementation "com.google.android.material:material:1.6.1"
+
+}
+

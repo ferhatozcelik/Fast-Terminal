@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.ferhatozcelik.terminal">
+
+	<uses-sdk />
+
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+	<uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+
+	<application
+		android:allowBackup="false"
+		android:description="@string/app_desc"
+		android:icon="@drawable/ic_ssh"
+		android:killAfterRestore="true"
+		android:label="@string/app_name"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+
+		<meta-data
+			android:name="android.max_aspect"
+			android:value="2.1" />
+		<meta-data
+			android:name="preloaded_fonts"
+			android:resource="@array/preloaded_fonts" />
+
+		<activity
+			android:name="com.ferhatozcelik.terminal.HostListActivity"
+			android:launchMode="singleTop"
+			android:resizeableActivity="true"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.CREATE_SHORTCUT"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.PICK"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+
+				<data android:scheme="ssh"/>
+				<data android:scheme="telnet"/>
+				<data android:scheme="local"/>
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:name="com.ferhatozcelik.terminal.PubkeyListActivity"
+			android:configChanges="keyboardHidden|orientation"
+			android:label="@string/title_pubkey_list">
+
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.ferhatozcelik.terminal.HostListActivity"/>
+		</activity>
+
+		<activity
+			android:name="com.ferhatozcelik.terminal.GeneratePubkeyActivity"
+			android:configChanges="keyboardHidden|orientation"
+			android:label="@string/title_pubkey_generate">
+
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.ferhatozcelik.terminal.PubkeyListActivity"/>
+		</activity>
+
+		<activity
+				android:name="com.ferhatozcelik.terminal.EditHostActivity"
+				android:label="@string/title_host_editor">
+
+			<meta-data
+					android:name="android.support.PARENT_ACTIVITY"
+					android:value="com.ferhatozcelik.terminal.HostListActivity"/>
+		</activity>
+
+		<activity
+			android:name="com.ferhatozcelik.terminal.SettingsActivity"
+			android:configChanges="keyboardHidden|orientation"
+			android:label="@string/title_settings">
+
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.ferhatozcelik.terminal.HostListActivity"/>
+		</activity>
+
+		<service
+			android:name="com.ferhatozcelik.terminal.service.TerminalManager"
+			android:configChanges="keyboardHidden|orientation"
+			android:description="@string/service_desc"/>
+
+		<activity
+			android:name="com.ferhatozcelik.terminal.ConsoleActivity"
+			android:configChanges="keyboardHidden|orientation"
+			android:launchMode="singleTop"
+			android:theme="@style/Theme.AppCompat"
+			android:windowSoftInputMode="stateAlwaysVisible|adjustResize"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+
+				<data android:scheme="ssh"/>
+				<data android:scheme="telnet"/>
+				<data android:scheme="local"/>
+			</intent-filter>
+		</activity>
+	</application>
+</manifest>

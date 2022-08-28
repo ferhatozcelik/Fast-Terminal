@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ff000000">
+
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+		tools:ignore="InconsistentLayout"/>
+
+	<com.google.android.material.tabs.TabLayout
+		android:id="@+id/tabs"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?attr/colorPrimary"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		app:tabMode="scrollable"
+		app:tabContentStart="60dp"
+		app:tabIndicatorColor="@android:color/white"
+		tools:ignore="InconsistentLayout"/>
+
+	<TextView
+		android:id="@android:id/empty"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@id/toolbar"
+		android:gravity="center"
+		android:text="@string/terminal_no_hosts_connected"
+		android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+	<com.ferhatozcelik.terminal.util.TerminalViewPager
+		android:id="@+id/console_flip"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@id/toolbar" />
+
+	<RelativeLayout
+		android:id="@+id/console_password_group"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="#80000000"
+		android:fadingEdge="horizontal"
+		android:fadingEdgeLength="25dip"
+		android:textColor="@color/primary"
+		android:padding="5dip"
+		android:visibility="visible">
+
+		<EditText
+			android:id="@+id/console_password"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/console_password_instructions"
+			android:layout_marginBottom="8dp"
+			android:layout_marginLeft="12dp"
+			android:layout_marginRight="12dp"
+			android:background="@drawable/backgraund_outline"
+			android:fontFamily="@font/open_sans"
+			android:hint="@string/prompt_password"
+			android:inputType="textPassword"
+			android:padding="6dp"
+			android:singleLine="true"
+			android:textColor="@color/primary"
+			android:textColorHint="@color/primary"
+			android:textStyle="normal" />
+
+		<TextView
+			android:id="@+id/console_password_instructions"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="16sp"
+			android:layout_marginRight="16sp"
+			android:fontFamily="@font/open_sans_bold"
+			android:textStyle="bold"
+			android:text="@string/prompt_password"
+			android:textColor="@color/white"
+			android:visibility="visible" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/console_boolean_group"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="#80000000"
+		android:fadingEdge="horizontal"
+		android:fadingEdgeLength="25dip"
+		android:padding="5dip"
+		android:visibility="gone">
+
+		<TextView
+			android:id="@+id/console_prompt"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/open_sans"
+			android:layout_margin="8dp"
+			android:textColor="@color/white" />
+
+		<androidx.appcompat.widget.AppCompatButton
+			android:id="@+id/console_prompt_no"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentRight="true"
+			android:layout_below="@+id/console_prompt"
+			android:clickable="false"
+			android:paddingBottom="10dip"
+			android:background="@drawable/backgraund_outline"
+			android:textColor="@color/primary"
+			android:paddingEnd="40dip"
+			android:paddingLeft="40dip"
+			android:paddingRight="40dip"
+			android:paddingStart="40dip"
+			android:paddingTop="5dip"
+			android:layout_margin="4dp"
+			android:text="@string/button_no"/>
+
+		<androidx.appcompat.widget.AppCompatButton
+			android:id="@+id/console_prompt_yes"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:layout_below="@+id/console_prompt"
+			android:layout_marginBottom="4dp"
+			android:layout_marginEnd="4dp"
+			android:layout_marginStart="4dp"
+			android:layout_marginTop="4dp"
+			android:layout_toLeftOf="@+id/console_prompt_no"
+			android:layout_toStartOf="@+id/console_prompt_no"
+			android:background="@drawable/backgraund_outline"
+			android:paddingBottom="10dip"
+			android:paddingEnd="40dip"
+			android:paddingLeft="40dip"
+			android:paddingRight="40dip"
+			android:paddingStart="40dip"
+			android:paddingTop="5dip"
+			android:text="@string/button_yes"
+			android:textColor="@color/primary" />
+
+
+	</RelativeLayout>
+
+	<include layout="@layout/inc_keyboard" />
+
+</RelativeLayout>
