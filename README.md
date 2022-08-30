@@ -17,7 +17,7 @@ This application created by Ferhat OZCELIK
     
 ## Permissions
 
-On Android versions prior to Android 6.0, wallabag requires the following permissions:
+On Android versions prior to Android 6.0, Fast Terminal requires the following permissions:
 - Full Network Access.
 - View Network Connections.
 - Run at startup.
