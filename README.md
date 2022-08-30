@@ -28,6 +28,9 @@ This application created by Ferhat OZCELIK
 [<img src="https://github.com/ferhatozcelik/fast_terminal/raw/master/screenshot/5.jpg" align="left" width="200" hspace="10" vspace="10">](/screenshot/5.png)
 
 
+
+    
+    
 ## Permissions
 
 On Android versions prior to Android 6.0, wallabag requires the following permissions:
