@@ -52,6 +52,17 @@
 			</intent-filter>
 		</activity>
 
+
+		<activity
+			android:name="com.ferhatozcelik.terminal.CommandsActivity"
+			android:configChanges="keyboardHidden|orientation">
+
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.ferhatozcelik.terminal.CommandsActivity"/>
+		</activity>
+
+
 		<activity
 			android:name="com.ferhatozcelik.terminal.PubkeyListActivity"
 			android:configChanges="keyboardHidden|orientation"

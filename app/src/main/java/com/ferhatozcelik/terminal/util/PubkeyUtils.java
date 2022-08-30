@@ -286,7 +286,7 @@ public class PubkeyUtils {
 	public static String convertToOpenSSHFormat(PublicKey pk, String origNickname) throws IOException, InvalidKeyException {
 		String nickname = origNickname;
 		if (nickname == null)
-			nickname = "connectbot@android";
+			nickname = "fastterminal@android";
 
 		if (pk instanceof RSAPublicKey) {
 			String data = "ssh-rsa ";

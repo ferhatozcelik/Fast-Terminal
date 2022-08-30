@@ -1,20 +1,3 @@
-/*
- * ConnectBot: simple, powerful, open-source SSH client for Android
- * Copyright 2007 Kenny Root, Jeffrey Sharkey
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.ferhatozcelik.terminal;
 
 import java.lang.ref.WeakReference;
@@ -49,6 +32,7 @@ import android.os.Message;
 import android.preference.PreferenceManager;
 import androidx.annotation.Nullable;
 
+import com.ferhatozcelik.terminal.views.CommandDatabase;
 import com.ferhatozcelik.terminal.views.FastButtonListAdapter;
 import com.google.android.material.tabs.TabLayout;
 import androidx.core.app.ActivityCompat;
@@ -95,7 +79,7 @@ public class ConsoleActivity extends AppCompatActivity implements BridgeDisconne
 
 	protected static final int REQUEST_EDIT = 1;
 
-	private static final int KEYBOARD_DISPLAY_TIME = 3000;
+	private static final int KEYBOARD_DISPLAY_TIME = 8000;
 	private static final int KEYBOARD_REPEAT_INITIAL = 500;
 	private static final int KEYBOARD_REPEAT = 100;
 	private static final String STATE_SELECTED_URI = "selectedUri";
@@ -629,7 +613,8 @@ public class ConsoleActivity extends AppCompatActivity implements BridgeDisconne
 		RecyclerView commandsList = findViewById(R.id.commandsList);
 
 
-		ArrayList<FastButton> commandsButtons = new ArrayList<>();
+		CommandDatabase commandDatabase = new CommandDatabase(context);
+		ArrayList<FastButton> commandsButtons = commandDatabase.getCommandList();
 		ArrayList<FastButton> fastButtons = new ArrayList<>();
 
 		fastButtons.add(new FastButton("button_ctrl", "CTRL" , null));
@@ -668,9 +653,6 @@ public class ConsoleActivity extends AppCompatActivity implements BridgeDisconne
 		FastButtonListAdapter customAdapter = new FastButtonListAdapter(fastButtons, context, listItemClickListenner);
 		buttonsList.setAdapter(customAdapter);
 
-
-		commandsButtons.add(new FastButton("ls", "ls" , null));
-		commandsButtons.add(new FastButton("servio restart", "Servio Restart" , null));
 
 		LinearLayoutManager linearLayoutCommandsManager = new LinearLayoutManager(context);
 		linearLayoutCommandsManager.setOrientation(RecyclerView.HORIZONTAL);
@@ -1018,13 +1000,12 @@ public class ConsoleActivity extends AppCompatActivity implements BridgeDisconne
 		if (String.class.equals(prompt.promptRequested)) {
 			hideEmulatedKeys();
 			stringPromptGroup.setVisibility(View.VISIBLE);
+			stringPromptInstructions.setVisibility(View.VISIBLE);
 
 			String instructions = prompt.promptInstructions;
 			if (instructions != null && instructions.length() > 0) {
-				stringPromptInstructions.setVisibility(View.VISIBLE);
 				stringPromptInstructions.setText(instructions);
-			} else
-				stringPromptInstructions.setVisibility(View.GONE);
+			}
 			stringPrompt.setText("");
 			stringPrompt.setHint(prompt.promptHint);
 			stringPrompt.requestFocus();

@@ -8,14 +8,6 @@
 		<item name="colorAccent">@color/accent</item>
 	</style>
 
-	<style name="KeyboardKey">
-		<item name="android:layout_width">50dp</item>
-		<item name="android:layout_height">45dp</item>
-		<item name="android:layout_margin">0dp</item>
-		<item name="android:padding">2dp</item>
-		<item name="android:textSize">10sp</item>
-	</style>
-
 	<style name="ListItemIcon">
 		<item name="android:layout_marginLeft">@dimen/list_item_left_right_padding</item>
 		<item name="android:layout_marginStart" tools:ignore="NewApi">@dimen/list_item_left_right_padding</item>
@@ -33,11 +25,6 @@
 		<item name="android:layout_alignParentStart" tools:ignore="NewApi">true</item>
 	</style>
 
-	<style name="ListItemFirstLineText.WithIcon" parent="ListItemFirstLineText">
-		<item name="android:layout_marginLeft">@dimen/list_item_text_margin_left</item>
-		<item name="android:layout_marginStart" tools:ignore="NewApi">@dimen/list_item_text_margin_left</item>
-	</style>
-
 	<style name="ListItemSecondLineText">
 		<item name="android:layout_alignParentBottom">true</item>
 		<item name="android:textColor">@color/white</item>
@@ -45,11 +32,6 @@
 		<item name="android:paddingBottom">@dimen/list_item_top_bottom_padding</item>
 		<item name="android:layout_alignParentLeft">true</item>
 		<item name="android:layout_alignParentStart" tools:ignore="NewApi">true</item>
-	</style>
-
-	<style name="ListItemSecondLineText.WithIcon" parent="ListItemSecondLineText">
-		<item name="android:layout_marginLeft">@dimen/list_item_text_margin_left</item>
-		<item name="android:layout_marginStart" tools:ignore="NewApi">@dimen/list_item_text_margin_left</item>
 	</style>
 
 	<style name="ListItemFirstLineText.Red" parent="ListItemFirstLineText">
@@ -75,9 +57,6 @@
 	<style name="ListItemSecondLineText.Blue" parent="ListItemSecondLineText">
 		<item name="android:textColor">@color/blue</item>
 	</style>
-
-	<!-- This value is overridden for v11 and higher, but left empty here. -->
-	<style name="SelectableItem"></style>
 
 	<style name="SwitchCompatTheme" parent="Theme.AppCompat">
 		<item name="colorAccent">@color/accent</item>

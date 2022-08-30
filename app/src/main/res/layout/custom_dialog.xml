@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	android:id="@+id/dialog_frame_flat"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:gravity="center"
+	android:padding="8dp"
+	android:background="@drawable/rounded_dark_bg">
+
+	<androidx.appcompat.widget.LinearLayoutCompat
+		android:id="@+id/dialog_layout_flat"
+		android:layout_width="300dp"
+		android:layout_height="230dp"
+		android:orientation="vertical"
+		android:gravity="center_horizontal"
+		android:layout_gravity="center">
+
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/dialog_icon_flat"
+			android:layout_width="120dp"
+			android:layout_height="120dp"
+			app:srcCompat="@drawable/ic_code"
+			android:layout_marginBottom="8dp"
+			android:layout_marginTop="8dp"/>
+
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/dialog_title_flat"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Fast Command Add"
+			android:textStyle="bold"
+			android:textSize="20sp"
+			android:textColor="@color/white"
+			android:layout_marginBottom="8dp"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<androidx.appcompat.widget.AppCompatButton
+				android:id="@+id/btn_cancel"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_weight="1"
+				android:background="@drawable/btn_red_selector"
+				android:gravity="center"
+				android:orientation="horizontal"
+				android:layout_margin="4dp"
+				android:clickable="true"
+				android:text="@string/dialog_cancel"
+				android:textColor="@color/white"
+				android:focusable="true"/>
+
+			<androidx.appcompat.widget.AppCompatButton
+				android:id="@+id/btn_ok"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_weight="1"
+				android:background="@drawable/btn_green_selector"
+				android:gravity="center"
+				android:orientation="horizontal"
+				android:clickable="true"
+				android:layout_margin="4dp"
+				android:text="Add"
+				android:textColor="@color/white"
+				android:focusable="true"/>
+
+		</LinearLayout>
+
+
+
+	</androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>

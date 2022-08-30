@@ -30,7 +30,7 @@ public class ConnectionNotifier {
 	private static final int ONLINE_DISCONNECT_NOTIFICATION = 3;
 	int pendingIntentFlags;
 
-	private static final String NOTIFICATION_CHANNEL = "my_connectbot_channel";
+	private static final String NOTIFICATION_CHANNEL = "fast_terminal_channel";
 
 	private static class Holder {
 		private static final ConnectionNotifier sInstance = new ConnectionNotifier();
@@ -55,7 +55,7 @@ public class ConnectionNotifier {
 	private NotificationCompat.Builder newNotificationBuilder(Context context, String id) {
 		NotificationCompat.Builder builder =
 				new NotificationCompat.Builder(context, id)
-						.setSmallIcon(R.drawable.notification_icon)
+						.setSmallIcon(R.drawable.ic_ssh)
 						.setWhen(System.currentTimeMillis());
 
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -110,6 +110,7 @@ public class ConnectionNotifier {
 	private Notification newRunningNotification(Context context) {
 		NotificationCompat.Builder builder = newNotificationBuilder(context, NOTIFICATION_CHANNEL);
 
+		builder.setSilent(true);
 		builder.setOngoing(true);
 		builder.setWhen(0);
 
@@ -121,8 +122,7 @@ public class ConnectionNotifier {
 
 		Intent disconnectIntent = new Intent(context, HostListActivity.class);
 		disconnectIntent.setAction(HostListActivity.DISCONNECT_ACTION);
-		builder.addAction(
-				android.R.drawable.ic_menu_close_clear_cancel,
+		builder.addAction(R.drawable.ic_ssh,
 				res.getString(R.string.list_host_disconnect),
 				PendingIntent.getActivity(context, ONLINE_DISCONNECT_NOTIFICATION, disconnectIntent, pendingIntentFlags));
 

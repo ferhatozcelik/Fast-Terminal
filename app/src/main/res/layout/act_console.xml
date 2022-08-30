@@ -3,8 +3,8 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
 	android:background="#ff000000">
 
 	<androidx.appcompat.widget.Toolbar
@@ -12,6 +12,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+		android:elevation="0dp"
 		tools:ignore="InconsistentLayout"/>
 
 	<com.google.android.material.tabs.TabLayout
@@ -42,27 +43,25 @@
 
 	<RelativeLayout
 		android:id="@+id/console_password_group"
-		android:layout_width="fill_parent"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_alignParentBottom="true"
-		android:background="#80000000"
-		android:fadingEdge="horizontal"
-		android:fadingEdgeLength="25dip"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:layout_margin="8dp"
+		android:padding="8dp"
 		android:textColor="@color/primary"
-		android:padding="5dip"
-		android:visibility="visible">
+		android:visibility="gone">
 
 		<EditText
 			android:id="@+id/console_password"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_below="@+id/console_password_instructions"
-			android:layout_marginBottom="8dp"
-			android:layout_marginLeft="12dp"
-			android:layout_marginRight="12dp"
+			android:layout_marginLeft="8dp"
+			android:layout_marginRight="8dp"
 			android:background="@drawable/backgraund_outline"
 			android:fontFamily="@font/open_sans"
-			android:hint="@string/prompt_password"
+			android:hint="Paralo Giriniz"
 			android:inputType="textPassword"
 			android:padding="6dp"
 			android:singleLine="true"
@@ -72,14 +71,14 @@
 
 		<TextView
 			android:id="@+id/console_password_instructions"
-			android:layout_width="fill_parent"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_marginLeft="16sp"
 			android:layout_marginRight="16sp"
 			android:fontFamily="@font/open_sans_bold"
-			android:textStyle="bold"
 			android:text="@string/prompt_password"
 			android:textColor="@color/white"
+			android:textStyle="bold"
 			android:visibility="visible" />
 
 	</RelativeLayout>
@@ -99,8 +98,8 @@
 			android:id="@+id/console_prompt"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
-			android:fontFamily="@font/open_sans"
 			android:layout_margin="8dp"
+			android:fontFamily="@font/open_sans"
 			android:textColor="@color/white" />
 
 		<androidx.appcompat.widget.AppCompatButton
@@ -110,17 +109,17 @@
 			android:layout_alignParentEnd="true"
 			android:layout_alignParentRight="true"
 			android:layout_below="@+id/console_prompt"
+			android:layout_margin="4dp"
+			android:background="@drawable/backgraund_outline"
 			android:clickable="false"
 			android:paddingBottom="10dip"
-			android:background="@drawable/backgraund_outline"
-			android:textColor="@color/primary"
 			android:paddingEnd="40dip"
 			android:paddingLeft="40dip"
 			android:paddingRight="40dip"
 			android:paddingStart="40dip"
 			android:paddingTop="5dip"
-			android:layout_margin="4dp"
-			android:text="@string/button_no"/>
+			android:text="@string/button_no"
+			android:textColor="@color/primary" />
 
 		<androidx.appcompat.widget.AppCompatButton
 			android:id="@+id/console_prompt_yes"
@@ -146,6 +145,6 @@
 
 	</RelativeLayout>
 
-	<include layout="@layout/inc_keyboard" />
+	<include layout="@layout/inc_keyboard"/>
 
 </RelativeLayout>

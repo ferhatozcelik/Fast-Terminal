@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-	<color name="key_background_selected">#55f0f0f0</color>
-	<color name="key_background_pressed">#aaa0a0ff</color>
-	<color name="key_background_normal">#55f0f0f0</color>
-	<color name="key_background_layout">#55000000</color>
-	<color name="key_separator">#00000000</color>
-	<color name="keyboard_background">#55b0b0f0</color>
 
 	<color name="primary">#33364f</color>
 	<color name="dark_primary">#33364f</color>
 
 	<color name="accent">#7E7F81</color>
-	<color name="dark_accent">#4A4C5C</color>
 
+	<color name="white">#FFFFFF</color>
+	<color name="red">#FF0000</color>
+	<color name="red_light">#FF5858</color>
+	<color name="blue">#0040FF</color>
+	<color name="yellow">#FFFB00</color>
+	<color name="green">#01D323</color>
+	<color name="green_light">#61F879</color>
 
 	<color name="primary_dark">#33364f</color>
 	<color name="primary_light">#4A4C5C</color>
 	<color name="primary_extra_light">#7E7F81</color>
-	<color name="white">#FFFFFF</color>
-	<color name="black">#000000</color>
 	<color name="transparent">#00FFFFFF</color>
+
 </resources>

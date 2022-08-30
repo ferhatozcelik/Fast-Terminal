@@ -12,7 +12,6 @@ android {
 		minSdkVersion 21
 		targetSdkVersion 32
 		vectorDrawables.useSupportLibrary = true
-
 	}
 
 	buildTypes {
@@ -23,10 +22,7 @@ android {
 		}
 	}
 
-
 }
-
-
 
 dependencies {
 	implementation 'org.connectbot:sshlib:2.2.20'
@@ -34,6 +30,7 @@ dependencies {
 	implementation 'androidx.appcompat:appcompat:1.4.2'
 	implementation "androidx.preference:preference:1.2.0"
 	implementation "com.google.android.material:material:1.6.1"
+	implementation 'com.google.code.gson:gson:2.9.0'
 
 }
 

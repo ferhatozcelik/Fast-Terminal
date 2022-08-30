@@ -213,6 +213,8 @@ public class HostListActivity extends AppCompatListActivity implements OnHostSta
 
 		commandsListButton.setOnClickListener(v -> {
 
+			Intent intent = new Intent(HostListActivity.this, CommandsActivity.class);
+			startActivity(intent);
 
 		});
 

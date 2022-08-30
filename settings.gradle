@@ -14,5 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "proterminal"
 include ':app'
-include ':sshlib'
-include ':sshlib'

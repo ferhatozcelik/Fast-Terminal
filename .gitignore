@@ -1,6 +1,10 @@
 # translation artifacts
 launchpad-*.tar.gz
 
+
+# keystore files
+keystore/
+
 # local config files
 local.properties
 

@@ -190,7 +190,7 @@ public void setScreenSize(int c, int r, boolean broadcast) {
       BackSpace[0] = BackSpace[3] = "\u007f";	//  VMS other is delete
     } else {
       //BackSpace[0] = BackSpace[1] = BackSpace[2] = BackSpace[3] = "\b";
-      // ConnectBot modifications.
+      //  modifications.
       BackSpace[0] = "\b";
       BackSpace[1] = "\u007f";
       BackSpace[2] = "\u001b[3~";

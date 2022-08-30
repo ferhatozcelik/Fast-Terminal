@@ -170,9 +170,6 @@ public class PubkeyBean extends AbstractBean {
 		return sb.toString();
 	}
 
-	/* (non-Javadoc)
-	 * @see org.connectbot.bean.AbstractBean#getValues()
-	 */
 	@Override
 	public ContentValues getValues() {
 		ContentValues values = new ContentValues();

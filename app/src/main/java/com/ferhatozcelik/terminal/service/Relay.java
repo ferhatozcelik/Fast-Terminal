@@ -43,7 +43,6 @@ public class Relay implements Runnable {
 	}
 
 	public void setCharset(String encoding) {
-		Log.d("ConnectBot.Relay", "changing charset to " + encoding);
 		Charset charset;
 		if (encoding.equals("CP437")) {
 			charset = new IBM437("IBM437",

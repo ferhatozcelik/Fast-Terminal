@@ -8,78 +8,16 @@
 
   <string name="title_pubkey_list">"Pubkeyler"</string>
 
-  <string name="title_port_forwards_list">"İleri Port"</string>
+	<string name="title_host_editor">"Ana Bilgisayarı Düzenle"</string>
 
-  <string name="title_host_editor">"Ana Bilgisayarı Düzenle"</string>
-
-  <string name="title_help">"Yardım"</string>
-
-  <string name="title_colors">"Renkler"</string>
-
-  <string name="title_color_picker">"Bir renk seç"</string>
+	<string name="title_color_picker">"Bir renk seç"</string>
 
   <string name="title_settings">Ayarlar</string>
 
   <string name="title_pubkey_generate">Oluştur</string>
 
-  <string name="help_intro">"Belirli bir konu hakkında daha fazla bilgi için lütfen aşağıdan bir konu seçin."</string>
 
-
-  <string name="terms_and_conditions">"Şartlar</string>
-
-
-  <string name="hints">"İpuçları"</string>
-
-
-  <string name="host_shortcuts_header">"Ana Bilgisayar Kısayolları"</string>
-
-
-  <string name="host_shortcuts_content">"Sık kullanılan SSH ana bilgisayarlarına doğrudan kısayollar oluşturmak için Android masaüstünüze uzun basın."</string>
-
-
-  <string name="scroll_hints_header">"Geri kaydır /İleri kaydır"</string>
-
-
-  <string name="scroll_hints_content">"Parmağınızı ekranın sağ tarafında yukarı kaydırmak, yerel terminal arabellek geçmişinde ileri ve geri kaydırmanıza olanak tanır."</string>
-
-
-  <string name="scrolling_back">"Geri kaydırma"</string>
-  <string name="scrolling_forward">"İleri kaydırma"</string>
-
-
-  <string name="page_updn_header">"Sayfa Yukarı /Sayfa Aşağı"</string>
-
-
-  <string name="page_updn_content">"NOT: Bu, ayarlarda etkinleştirilmelidir."\n\n"Parmağınızı ekranın sol üçte birlik kısmında yukarı ve aşağı kaydırmak, uzaktaki ana bilgisayara bir sayfa yukarı ve sayfa aşağı tuşu gönderir. Birçok program bunu geri kaydırmayla eşler. irssi veya tinyfugue gibi tarihin içine."</string>
-
-
-  <string name="page_up">"Sayfa yukarı"</string>
-  <string name="page_down">"Sayfa aşağı"</string>
-
-
-  <string name="switching_hosts_header">"Ana Bilgisayar Değiştirme"</string>
-
-
-  <string name="switching_hosts_content">"Parmağınızı ekranın bir tarafından diğerine kaydırmak, o anda bağlı olan ana bilgisayarlar arasında geçiş yapacak."</string>
-
-
-  <string name="next_host">"Bir sonraki ev sahibi"</string>
-  <string name="prev_host">"Önceki ev sahibi"</string>
-
-
-  <string name="keyboard_shortcuts">"Klavye kısayolları"</string>
-
-  <string name="increase_font_size">"Yazı Tipi Boyutunu Artır"</string>
-
-  <string name="increase_font_shortcut">Ctrl ve</string>
-
-  <string name="decrease_font_size">"Yazı Tipi Boyutunu Azalt"</string>
-
-  <string name="decrease_font_shortcut">Ctrl ve -</string>
-
-  <string name="paste_shortcut">Ctrl-Üst Karakter-V</string>
-
-  <string name="pubkey_generate">"Oluştur"</string>
+	<string name="pubkey_generate">"Oluştur"</string>
   <string name="pubkey_delete">"Anahtarı Sil"</string>
 
   <string name="pubkey_gather_entropy">"Entropi Toplama"</string>
@@ -89,8 +27,7 @@
   <string name="pubkey_copy_private">"Özel anahtarı kopyala"</string>
   <string name="pubkey_copy_public">"Genel anahtarı kopyala"</string>
 
-  <string name="pubkey_list_empty">""\n"oluşturmak veya anahtar çiftlerini içe aktarmak için \"Menü\"ye dokunun.</string>
-  <string name="pubkey_unknown_format">"Bilinmeyen biçim"</string>
+	<string name="pubkey_unknown_format">"Bilinmeyen biçim"</string>
   <string name="pubkey_change_password">"Şifre değiştir"</string>
 
   <string name="pubkey_list_pick">"/sdcard\'dan seç"</string>
@@ -109,31 +46,15 @@
   <string name="pubkey_confirm_use">"Kullanmadan önce onaylayın"</string>
 
 
-  <string name="portforward_list_empty">"İleri bağlantı noktası"\n" oluşturmak için \"Menü\"ye dokunun.</string>
-
-  <string name="portforward_edit">"İleri bağlantı noktasını düzenle"</string>
-
-  <string name="portforward_delete">"İleriye doğru bağlantı noktasını sil"</string>
-
-  <string name="prompt_nickname">"Host Name:"</string>
+	<string name="prompt_nickname">"Host Name:"</string>
 
   <string name="prompt_nickname_hint_pubkey">"Pub Key"</string>
 
-  <string name="prompt_source_port">"Kaynak Port:"</string>
-
-  <string name="prompt_destination">"Hedef:"</string>
-
-  <string name="prompt_old_password">"Eski Şifre:"</string>
+	<string name="prompt_old_password">"Eski Şifre:"</string>
 
   <string name="prompt_password">"Şifre:"</string>
 
-  <string name="prompt_again">"(Yeniden Dene)"</string>
-
-  <string name="prompt_type">"Tip:"</string>
-
-  <string name="prompt_password_can_be_blank">"Not: Şifre boş olabilir"</string>
-
-  <string name="prompt_bits">"Bit:"</string>
+	<string name="prompt_bits">"Bit:"</string>
 
 
   <string name="prompt_pubkey_password">"\'%1$s\' Anahtarının parolası"</string>
@@ -154,9 +75,7 @@
 
   <string name="host_authenticity_warning">"\'%1$s\' ana makinesinin özgünlüğü belirlenemiyor."</string>
 
-  <string name="host_fingerprint">"Ana makine %1$s anahtar parmak izi %2$s"</string>
-
-  <string name="alert_passwords_do_not_match_msg">"Parolalar uyuşmuyor!"</string>
+	<string name="alert_passwords_do_not_match_msg">"Parolalar uyuşmuyor!"</string>
   <string name="alert_wrong_password_msg">"Yanlış şifre!"</string>
   <string name="alert_key_corrupted_msg">"Özel anahtar bozuk görünüyor!"</string>
   <string name="alert_sdcard_absent">"SD kart takılı değil!"</string>
@@ -164,43 +83,16 @@
 
   <string name="button_change">"Değiştirmek"</string>
 
-  <string name="button_resize">"Yeniden boyutlandır"</string>
-
-  <string name="alert_disconnect_msg">"Bağlantı koptu"</string>
+	<string name="alert_disconnect_msg">"Bağlantı koptu"</string>
 
 
-  <string name="pref_emulation_category">"Terminal öykünmesi"</string>
+	<string name="pref_ui_category">"Kullanıcı arayüzü"</string>
 
 
-  <string name="pref_emulation_title">"Emülasyon modu"</string>
-
-  <string name="pref_emulation_summary">"PTY bağlantıları için kullanılacak terminal öykünme modu"</string>
-
-
-  <string name="pref_scrollback_title">"Geri kaydırma boyutu"</string>
-
-  <string name="pref_scrollback_summary">"Her konsol için bellekte tutulacak geri kaydırma arabelleğinin boyutu"</string>
-
-
-  <string name="pref_backupkeys_title">Pubkey\'leri yedekle</string>
-
-  <string name="pref_backupkeys_summary">Android\'in yedekleme mekanizmasını kullanarak özel anahtarların yedeklerini saklayın</string>
-
-
-  <string name="pref_ui_category">"Kullanıcı arayüzü"</string>
-
-
-  <string name="pref_rotation_title">"Döndürme modu"</string>
-
-  <string name="pref_rotation_summary">"Klavye açılıp/çıkarıldığında dönüş nasıl değiştirilir"</string>
-  <string name="pref_titlebarhide_title">"Başlık çubuğunu otomatik gizle"</string>
-  <string name="pref_titlebarhide_summary">"Başlık çubuğunu göstermek ve menüye erişmek için konsola dokunun"</string>
-  <string name="pref_alwaysvisible_title">Özel tuşlar her zaman görünür</string>
+	<string name="pref_alwaysvisible_title">Özel tuşlar her zaman görünür</string>
   <string name="pref_pg_updn_gesture_title">"Sayfa yukarı/aşağı hareketi"</string>
   <string name="pref_pg_updn_gesture_summary">"Pg yukarı/dn\'yi terminale göndermek için ekranın sol üçte birini kaydırın"</string>
-  <string name="pref_fullscreen_title">"Tam ekran"</string>
-  <string name="pref_fullscreen_summary">"Konsoldayken durum çubuğunu gizle"</string>
-  <string name="pref_keyboard_category">"Tuş takımı"</string>
+	<string name="pref_keyboard_category">"Tuş takımı"</string>
 
   <string name="pref_shiftfkeys_title">"Shift num F tuşlarıdır"</string>
 
@@ -227,25 +119,7 @@
   <string name="pref_conn_persist_summary">"Bağlantıları arka planda bağlı kalmaya zorla"</string>
 
 
-  <string name="pref_keymode_title">"Dizin kısayolları"</string>
-
-  <string name="pref_keymode_summary">"\'/\' için Alt ve Sekme için Shift\'in nasıl kullanılacağını seçin"</string>
-
-
-  <string name="pref_stickymodifiers_title">"Yapışkan değiştiriciler"</string>
-
-  <string name="pref_stickymodifiers_summary">"Değiştirici tuşlar, başka bir tuşa basılana kadar etkin kalır"</string>
-
-
-  <string name="only_alt">"Yalnızca alt"</string>
-
-
-  <string name="pref_camera_title">"Kamera kısayolu"</string>
-
-  <string name="pref_camera_summary">"Kamera düğmesine basıldığında hangi kısayolun tetikleneceğini seçin"</string>
-
-
-  <string name="pref_keepalive_title">"Ekranı açık tut"</string>
+	<string name="pref_keepalive_title">"Ekranı açık tut"</string>
 
   <string name="pref_keepalive_summary">"Konsolda çalışırken ekranın kapanmasını engelle"</string>
 
@@ -255,36 +129,7 @@
   <string name="pref_wifilock_summary">"Bir oturum etkinken Wi-Fi\'nin kapanmasını engelle"</string>
 
 
-  <string name="pref_bumpyarrows_title">"Darbeli oklar"</string>
-
-  <string name="pref_bumpyarrows_summary">"Ok tuşlarını gönderirken titret; gecikmeli bağlantılar için kullanışlıdır"</string>
-
-
-  <string name="pref_bell_category">"Terminal zili"</string>
-
-
-  <string name="pref_bell_title">"Sesli zil"</string>
-
-
-  <string name="pref_bell_volume_title">"Çan sesi"</string>
-
-
-  <string name="pref_bell_vibrate_title">"Zilde titret"</string>
-
-
-  <string name="pref_bell_notification_title">"Arka plan bildirimleri"</string>
-
-  <string name="pref_bell_notification_summary">"Arka planda çalışan bir terminal zil çaldığında bildirim gönder."</string>
-
-
-  <string name="list_keymode_right">"Sağ taraftaki tuşları kullanın"</string>
-
-  <string name="list_keymode_left">"Sol taraftaki tuşları kullanın"</string>
-
-  <string name="list_keymode_none">"Devre dışı bırakmak"</string>
-
-
-  <string name="list_pubkeyids_none">"Anahtarları kullanmayın"</string>
+	<string name="list_pubkeyids_none">"Anahtarları kullanmayın"</string>
 
   <string name="list_pubkeyids_any">"Kilidi açılmış herhangi bir anahtarı kullanın"</string>
 
@@ -292,10 +137,7 @@
   <string name="hostpref_nickname_title">"Host Name"</string>
 
 
-  <string name="hostpref_color_title">"Renk kategorisi"</string>
-
-
-  <string name="hostpref_fontsize_title">"Yazı tipi boyutu (pt)"</string>
+	<string name="hostpref_fontsize_title">"Yazı tipi boyutu (pt)"</string>
 
 
   <string name="hostpref_pubkeyid_title">"Pubkey kimlik doğrulamasını kullan"</string>
@@ -304,22 +146,12 @@
   <string name="hostpref_authagent_title">"SSH kimlik doğrulama aracısını kullan"</string>
 
 
-  <string name="hostpref_postlogin_title">"Giriş Sonrası Giriş Yap"</string>
-
-  <string name="hostpref_postlogin_summary">"Kimliği doğrulandıktan sonra uzak sunucuda çalıştırılacak komutlar"</string>
-
-
-  <string name="hostpref_compression_title">"Sıkıştırma"</string>
+	<string name="hostpref_compression_title">"Sıkıştırma"</string>
 
   <string name="hostpref_compression_summary">"Bu, daha yavaş ağlarda yardımcı olabilir"</string>
 
 
-  <string name="hostpref_wantsession_title">"Kabuk oturumunu başlat"</string>
-
-  <string name="hostpref_wantsession_summary">"Yalnızca bağlantı noktası yönlendirmeyi kullanmak için bu tercihi devre dışı bırakın"</string>
-
-
-  <string name="hostpref_stayconnected_title">"Bağlı kalın"</string>
+	<string name="hostpref_stayconnected_title">"Bağlı kalın"</string>
 
   <string name="hostpref_stayconnected_summary">"Bağlantı kesilirse ana bilgisayara yeniden bağlanmayı deneyin"</string>
 
@@ -360,70 +192,24 @@
 
   <string name="console_menu_paste">"Yapıştırmak"</string>
 
-  <string name="console_menu_portforwards">"Port İleri"</string>
 
-  <string name="console_menu_resize">"Menu Boyutu"</string>
-
-  <string name="console_menu_urlscan">"URL Tarama"</string>
-
-
-  <string name="button_yes">"Evet"</string>
+	<string name="button_yes">"Evet"</string>
 
   <string name="button_no">"Numara"</string>
 
 
-  <string name="portforward_local">"Yerel"</string>
-
-  <string name="portforward_remote">"Uzak"</string>
-
-  <string name="portforward_dynamic">"Dinamik (SOCKS)"</string>
-
-  <string name="portforward_pos">"İleriye bağlantı noktası oluştur"</string>
-
-  <string name="portforward_problem">"İleriye yönelik bağlantı noktası oluşturma sorunu, 1024\'ün altındaki bağlantı noktalarını kullanıyorsunuz veya bağlantı noktası zaten kullanılıyor mu?"</string>
-
-
-  <string name="format_username">"kullanıcıadi"</string>
+	<string name="format_username">"kullanıcıadi"</string>
 
   <string name="format_hostname">"hostname"</string>
 
   <string name="format_port">"port"</string>
 
-  <string name="list_menu_pubkeys">"Pubkey\'leri Yönet"</string>
-
-  <string name="list_menu_sortcolor">"Renge göre sırala"</string>
-
-  <string name="list_menu_sortname">"İsme göre sırala"</string>
-  <string name="list_menu_disconnect">"Tüm Bağlantıyı Kes"</string>
-  <string name="list_menu_settings">"Ayarlar"</string>
-
-  <string name="list_host_disconnect">"Bağlantıyı kes"</string>
+	<string name="list_host_disconnect">"Bağlantıyı kes"</string>
   <string name="list_host_edit">"Ana bilgisayarı düzenle"</string>
-  <string name="list_host_portforwards">"İleriye bağlantı noktasını düzenle"</string>
-  <string name="list_host_delete">"Ana bilgisayarı sil"</string>
-
-  <string name="list_host_empty">"Henüz ana bilgisayar oluşturulmadı."</string>
+	<string name="list_host_delete">"Ana bilgisayarı sil"</string>
 
 
-  <string name="list_rotation_default">"Varsayılan"</string>
-  <string name="list_rotation_land">"Güç manzara"</string>
-  <string name="list_rotation_port">"Dikey Zorla"</string>
-
-  <string name="list_rotation_auto">"Otomatik"</string>
-
-
-  <string name="list_camera_ctrlaspace">"Ctrl A sonra Boşluk"</string>
-
-  <string name="list_camera_ctrla">"Ctrl A"</string>
-
-  <string name="list_camera_esc">"ESC"</string>
-
-  <string name="list_camera_esc_a">"ESC A"</string>
-
-  <string name="list_camera_none">"Hiçbiri"</string>
-
-
-  <string name="list_delkey_backspace">"Geri al"</string>
+	<string name="list_delkey_backspace">"Geri al"</string>
 
   <string name="list_delkey_del">"Del"</string>
 
@@ -441,23 +227,10 @@
   <string name="terminal_connecting" ns0:ignore="PluralsCandidate">"%3$s üzerinden %1$s:%2$d\'ye bağlanılıyor"</string>
 
 
-  <string name="terminal_connected">"Bağlı"</string>
-  <string name="terminal_sucess">"Doğrulanmış ana makine \'%1$s\' anahtarı: %2$s"</string>
-  <string name="terminal_failed">"Ana makine anahtarı doğrulaması başarısız oldu."</string>
+	<string name="terminal_failed">"Ana makine anahtarı doğrulaması başarısız oldu."</string>
 
 
-  <string name="terminal_using_s2c_algorithm">"Sunucudan istemciye algoritma: %1$s %2$s"</string>
-
-  <string name="terminal_using_c2s_algorithm">"İstemciden sunucuya algoritması: %1$s %2$s"</string>
-
-  <string name="terminal_using_algorithm">"Algoritma kullanılıyor: %1$s %2$s"</string>
-
-
-  <string name="terminal_kex_algorithm">Anahtar değişim algoritması: %s</string>
-
-  <string name="terminal_auth">"Kimlik doğrulamaya çalışılıyor"</string>
-
-  <string name="terminal_auth_pass">"Parola giriniz..."</string>
+	<string name="terminal_auth_pass">"Parola giriniz..."</string>
   <string name="terminal_auth_pass_fail">"Kimlik doğrulama yöntemi \'parola\' başarısız oldu"</string>
 
   <string name="terminal_auth_pubkey_any">"Herhangi bir bellek içi ortak anahtarla \'genel anahtar\' kimlik doğrulaması deneniyor"</string>
@@ -465,10 +238,7 @@
   <string name="terminal_auth_pubkey_specific">"Belirli bir ortak anahtarla \'genel anahtar\' kimlik doğrulaması deneniyor"</string>
   <string name="terminal_auth_pubkey_fail">"\'%1$s\' anahtarıyla \'publickey\' kimlik doğrulama yöntemi başarısız oldu"</string>
 
-  <string name="terminal_auth_ki">"\'Klavye etkileşimli\' kimlik doğrulaması deneniyor"</string>
-  <string name="terminal_auth_ki_fail">"Klavye etkileşimli kimlik doğrulama yöntemi başarısız oldu"</string>
-
-  <string name="terminal_auth_fail">"[Barındırıcınız \'parola\' veya \'klavye etkileşimli\' kimlik doğrulamasını desteklemiyor.]"</string>
+	<string name="terminal_auth_fail">"[Barındırıcınız \'parola\' veya \'klavye etkileşimli\' kimlik doğrulamasını desteklemiyor.]"</string>
 
   <string name="terminal_no_session">"Ana bilgisayar tercihi nedeniyle oturum başlatılmayacak."</string>
   <string name="terminal_enable_portfoward">"Bağlantı noktası iletmeyi etkinleştir: %1$s"</string>
@@ -479,15 +249,7 @@
   <string name="notification_text">"%1$s dikkatinizi istiyor."</string>
 
 
-  <string name="no">"Numara"</string>
-
-  <string name="yes">"Evet"</string>
-
-
-  <string name="menu_colors_reset">"Sıfırla"</string>
-
-
-  <string name="app_is_running">"Pro Terminal çalışıyor"</string>
+	<string name="app_is_running">"Pro Terminal çalışıyor"</string>
 
   <string name="color_red">"kırmızı"</string>
   <string name="color_green">"Yeşil"</string>
@@ -495,28 +257,13 @@
   <string name="color_gray">"gri"</string>
 
 
-  <string name="colors_fg_label">"FG: %1$d"</string>
-
-
-  <string name="color_bg_label">"ŞG: %1$d"</string>
-
-
-  <string name="image_description_connected">"Bağlı."</string>
+	<string name="image_description_connected">"Bağlı."</string>
 
 
   <string name="image_description_disconnected">"Bağlantı kesildi."</string>
 
 
-  <string name="image_description_key_is_locked">"Anahtar kilitli."</string>
-
-
-  <string name="image_description_toggle_control_character">Kontrol karakterini değiştir.</string>
-
-
-  <string name="image_description_send_escape_character">Kaçış karakteri gönder.</string>
-
-
-  <string name="image_description_send_tab_character">TAB karakteri gönder.</string>
+	<string name="image_description_send_tab_character">TAB karakteri gönder.</string>
 
 
   <string name="image_description_hide_keyboard">Klavyeyi gizle.</string>
@@ -525,77 +272,16 @@
   <string name="image_description_show_keyboard">Klavyeyi göster.</string>
 
 
-  <string name="image_description_up">Yukarı ok</string>
+	<string name="hostpref_authagent_with_confirmation">onay gerektir</string>
 
-
-  <string name="image_description_down">Aşağı ok</string>
-
-
-  <string name="image_description_left">Sol ok</string>
-
-
-  <string name="image_description_right">Sağ ok</string>
-
-
-  <string name="image_description_volume">Ses</string>
-
-
-  <string name="button_key_esc">ESC</string>
-
-  <string name="button_key_ctrl">Ctrl</string>
-
-
-  <string name="button_key_home">Anasayfa</string>
-
-  <string name="button_key_end">Son</string>
-
-  <string name="button_key_pgup">Sayfa Yukarı</string>
-
-  <string name="button_key_pgdn">PgDn</string>
-
-  <string name="button_key_f1">F1</string>
-
-  <string name="button_key_f2">F2</string>
-
-  <string name="button_key_f3">F3</string>
-
-  <string name="button_key_f4">F4</string>
-
-  <string name="button_key_f5">F5</string>
-
-  <string name="button_key_f6">F6</string>
-
-  <string name="button_key_f7">F7</string>
-
-  <string name="button_key_f8">F8</string>
-
-  <string name="button_key_f9">F9</string>
-
-  <string name="button_key_f10">F10</string>
-
-  <string name="button_key_f11">F11</string>
-
-  <string name="button_key_f12">F12</string>
-
-  <string name="protocol_spinner_label">Protokol</string>
-
-  <string name="expand">Genişletmek</string>
-
-  <string name="hostpref_authagent_with_confirmation">onay gerektir</string>
-
-  <string name="hostpref_add_host">Ana makine ekle</string>
-
-  <string name="hostpref_edit_host">Ana bilgisayarı kaydet</string>
-
-  <string name="pubkey_add_new">Yeni pubkey ekle</string>
-
-  <string name="pubkey_import_existing">Mevcut pubkey\'i içe aktar</string>
-
-  <string name="discard_host_changes_message">Ana bilgisayar URI\'si geçersiz. Değişiklikleri silmek ister misiniz?</string>
+	<string name="discard_host_changes_message">Ana bilgisayar URI\'si geçersiz. Değişiklikleri silmek ister misiniz?</string>
 
   <string name="discard_host_button">atmak</string>
 
   <string name="discard_host_cancel_button">Düzenlemeye devam et</string>
+
+	<string name="dialog_cancel">İptal</string>
+	<string name="dialog_ok">Tamam</string>
 
 
   <string name="key_type_rsa_bits">RSA %d-bit</string>

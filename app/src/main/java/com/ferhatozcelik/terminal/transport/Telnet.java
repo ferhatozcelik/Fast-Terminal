@@ -315,9 +315,7 @@ public class Telnet extends AbsTransport {
 				context.getString(R.string.format_port));
 	}
 
-	/* (non-Javadoc)
-	 * @see org.connectbot.transport.AbsTransport#usesNetwork()
-	 */
+
 	@Override
 	public boolean usesNetwork() {
 		return true;
