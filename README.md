@@ -13,23 +13,7 @@ Fast terminal is a powerful open-source Secure Shell (SSH) facility. It will be 
 You can connect to Secure Shell servers running on UNIX-based servers with the client.
 
 This application created by Ferhat OZCELIK 
-
-
-## Screenshots
-
-[<img src="https://github.com/ferhatozcelik/fast_terminal/raw/master/screenshot/1.jpg" align="left" width="200" hspace="10" vspace="10">](/screenshot/1.png)
-
-[<img src="https://github.com/ferhatozcelik/fast_terminal/raw/master/screenshot/2.jpg" align="left" width="200" hspace="10" vspace="10">](/screenshot/2.png)
-    
-[<img src="https://github.com/ferhatozcelik/fast_terminal/raw/master/screenshot/3.jpg" align="left" width="200" hspace="10" vspace="10">](/screenshot/3.png)
-    
-[<img src="https://github.com/ferhatozcelik/fast_terminal/raw/master/screenshot/4.jpg" align="left" width="200" hspace="10" vspace="10">](/screenshot/4.png)
-    
-[<img src="https://github.com/ferhatozcelik/fast_terminal/raw/master/screenshot/5.jpg" align="left" width="200" hspace="10" vspace="10">](/screenshot/5.png)
-
-
-
-    
+   
     
 ## Permissions
 
@@ -46,3 +30,19 @@ This application is released under GNU GPLv3.
 Some of the used libraries are released under different licenses.
     
 The developer is not responsible for any errors or problems that may occur.
+
+## Screenshots
+
+[<img src="https://github.com/ferhatozcelik/fast_terminal/raw/master/screenshot/1.jpg" align="left" width="200" hspace="10" vspace="10">](/screenshot/1.png)
+
+[<img src="https://github.com/ferhatozcelik/fast_terminal/raw/master/screenshot/2.jpg" align="left" width="200" hspace="10" vspace="10">](/screenshot/2.png)
+    
+[<img src="https://github.com/ferhatozcelik/fast_terminal/raw/master/screenshot/4.jpg" align="left" width="200" hspace="10" vspace="10">](/screenshot/4.png)
+    
+[<img src="https://github.com/ferhatozcelik/fast_terminal/raw/master/screenshot/5.jpg" align="left" width="200" hspace="10" vspace="10">](/screenshot/5.png)
+
+
+
+    
+    
+
