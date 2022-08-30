@@ -17,9 +17,9 @@ This application created by Ferhat OZCELIK
 
 ## Screenshots
 
-[<img src="/screenshot/1.png" align="left" width="200" hspace="10" vspace="10">](/screenshot/1.png)
+[<img src="https://github.com/ferhatozcelik/fast_terminal/raw/master/screenshot/1.jpg" align="left" width="200" hspace="10" vspace="10">](/screenshot/1.png)
 
-[<img src="/screenshot/2.png" align="left" width="200" hspace="10" vspace="10">](/screenshot/2.png)
+[<img src="https://github.com/ferhatozcelik/fast_terminal/raw/master/screenshot/1.jpg" align="left" width="200" hspace="10" vspace="10">](/screenshot/2.png)
 
 
 ## Permissions
