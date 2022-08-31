@@ -4,7 +4,7 @@
   <string name="service_desc">"SSH bağlantılarını ve yüklenen pubkey\'leri korur"</string>
 
 
-  <string name="title_hosts_list">"Ev sahipleri"</string>
+  <string name="title_hosts_list">"Sunucu Listesi"</string>
 
   <string name="title_pubkey_list">"Pubkeyler"</string>
 
@@ -65,7 +65,7 @@
 
   <string name="host_verification_failure_warning_header">"UYARI: UZAKTAN ANA MAKİNA TANIMLAMASI DEĞİŞTİ!"</string>
 
-  <string name="host_verification_failure_warning">"BİRİSİNİN KÖTÜ BİR ŞEY YAPMASI OLASI!"\n"Birisi şu anda sizi dinliyor olabilir (ortadaki adam saldırısı)!"\n"Ana bilgisayar anahtarının az önce değiştirilmiş olması da mümkündür "</string>
+  <string name="host_verification_failure_warning">"Ana bilgisayar anahtarının az önce değiştirilmiş olması da mümkündür "</string>
 
 
   <string name="prompt_host_disconnected">"Ana makinenin bağlantısı kesildi."\n"Oturum kapatılsın mı?"</string>
@@ -195,7 +195,7 @@
 
 	<string name="button_yes">"Evet"</string>
 
-  <string name="button_no">"Numara"</string>
+  <string name="button_no">"Hayır"</string>
 
 
 	<string name="format_username">"kullanıcıadi"</string>
@@ -257,7 +257,7 @@
   <string name="color_gray">"gri"</string>
 
 
-	<string name="image_description_connected">"Bağlı."</string>
+	<string name="image_description_connected">"Bağlandı."</string>
 
 
   <string name="image_description_disconnected">"Bağlantı kesildi."</string>
