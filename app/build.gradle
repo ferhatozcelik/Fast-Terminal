@@ -16,15 +16,27 @@ android {
 
 	buildTypes {
 		release {
+			shrinkResources true
 			minifyEnabled true
 			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+			return true
+		}
+	}
+	lintOptions {
+		abortOnError false
+		lintConfig file('lint.xml')
+	}
+
+	externalNativeBuild {
+		cmake {
+			path 'CMakeLists.txt'
 		}
 	}
 
 }
 
 dependencies {
-	implementation 'org.connectbot:sshlib:2.2.20'
+	implementation 'org.connectbot:sshlib:2.2.21'
 	implementation "androidx.recyclerview:recyclerview:1.2.1"
 	implementation 'androidx.appcompat:appcompat:1.4.2'
 	implementation "androidx.preference:preference:1.2.0"

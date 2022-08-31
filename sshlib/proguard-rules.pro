@@ -1,21 +1,24 @@
-# Add project specific ProGuard rules here.
-# You can control the set of applied configuration files using the
-# proguardFiles setting in build.gradle.
-#
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
-
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
-
-# Uncomment this to preserve the line number information for
-# debugging stack traces.
 #-keepattributes SourceFile,LineNumberTable
+#-optimizationpasses 5
+-dontobfuscate
 
-# If you keep the line number information, uncomment this to
-# hide the original source file name.
-#-renamesourcefileattribute SourceFile
+# App classes
+-keep class org.connectbot.**
+-keepattributes InnerClasses
+-keep public class com.trilead.ssh2.compression.**
+-keep public class com.trilead.ssh2.crypto.**
+
+# All the classes are referenced indirectly.
+-keep class org.conscrypt.** { *; }
+
+# Backward compatibility code in Conscrypt
+-dontnote libcore.io.Libcore
+-dontnote org.apache.harmony.xnet.provider.jsse.OpenSSLRSAPrivateKey
+-dontnote org.apache.harmony.security.utils.AlgNameMapper
+-dontnote sun.security.x509.AlgorithmId
+
+-dontwarn dalvik.system.BlockGuard
+-dontwarn dalvik.system.BlockGuard$Policy
+-dontwarn dalvik.system.CloseGuard
+-dontwarn com.android.org.conscrypt.OpenSSLSocketImpl
+-dontwarn org.apache.harmony.xnet.provider.jsse.OpenSSLSocketImpl
